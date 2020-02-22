@@ -1,0 +1,42 @@
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+tr {
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+td {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+select {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+td h3 {
+    width: 50%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form br {
+    display: none;
+}
+
+.title-form {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,72 @@
+@font-face {
+	font-family: Proxima Nova Bold;
+	src: local("Proxima Nova Bold"),
+	url(TYPO/Proxima-Nova-Bold.otf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: Proxima Regular;
+	src: local("ProximaNova-Regular"),
+	url(TYPO/ProximaNova-Regular.otf);
+}
+h1 {
+	font-family: "Proxima Nova Bold";
+	font-size: 80px;
+	text-align: center;
+}
+h2 {
+	font-family: "Proxima Nova Bold";
+	font-size: 42px;
+}
+h3 {
+	font-family: "Proxima Nova Bold";
+	font-size: 24px;
+}
+p {
+	font-family: "Proxima Regular";
+	font-size: 20px;
+}
+a {
+	font-family: "Proxima Nova Bold";
+	font-size: 18px;
+	text-decoration: none;
+	color: #ffffff;
+}
+ul li a {
+	color: #ffffff;
+	font-size: 20px;
+}
+ul li a.unefig {
+	color: #000000;
+}
+.unefig {
+	color: #000000;
+}
+ul li a.active{
+    color: #BF3945;
+}
+ul li a:hover{
+    color: #BF3945;
+}
+strong {
+	font-weight: bold;
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+	
+}

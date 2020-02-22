@@ -1,0 +1,147 @@
+/*NAV*/
+.menu-toggle .burger-breads span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #212529;
+    z-index: 1;
+  }
+  .menu-close .burger-breads span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+  }
+  .menu-close .burger-breads span:nth-child(2) {
+    transform: rotate(135deg) translate(-7px, 9px);
+  }
+  .menu-close .burger-breads span:nth-child(3) {
+    opacity: 0;
+  }  
+  /*Styling Button*/
+  .menu-toggle {
+    display: inline-block;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  img.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 20px;
+    height: 40px;
+}
+  .main-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;  
+    overflow-x: visible;
+    transition: 0.3 ease;
+    z-index: 999;
+  }
+  .main-menu ul {
+    margin: 0;
+    padding: 2.5em 0 0;
+    width: 200px;
+    margin-top: 25px;
+  }
+  .main-menu a{
+    display: block;
+    padding: .75em 15px;
+  }
+  .main-menu li:first-child a {
+    border-top: 1px solid rgb(202, 192, 184);
+  }
+
+  li.line-nav a {
+    border-bottom: 2px solid #BF3945;
+}
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .main-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s;  
+  }  
+  .main-menu:target{
+    transform: translateX(0);
+    outline: none;
+    background-color: #BF3945;
+  }
+  .main-menu:target .menu-close {
+    z-index: 1001;
+  }
+  .main-menu:target ul {
+    position: relative;
+    z-index: 1000;
+  }
+  .main-menu:target + .backdrop{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #ffffff;
+    background: rgba(228, 223, 215, .85);
+    cursor: default;
+  }
+
+  @supports (position:fixed) {
+    .main-menu,
+    .main-meu:target + .backdrop{
+      position: fixed;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle,
+    .main-menu .menu-close {
+      display: none;
+    }
+    .main-menu {
+      position: relative;
+      transform : translateX(0);
+      left: auto;
+      top: auto;
+      height: auto;
+      
+    }
+    .main-menu ul {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      padding: 0;
+      background-color: transparent;
+    }
+    .logo{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav ul li a {
+      color: #ffffff;
+    }
+
+    
+  }
