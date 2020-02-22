@@ -11,11 +11,6 @@
     <title>Formulaire d'ajout</title>
 </head>
 <body>
-<?php
-    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "Groot") // Si le mot de passe est bon
-    {
-    // On affiche les codes
-    ?>
 <header>
     <a href="#main-menu" class="menu-toggle">
         <div class="burger-breads">
@@ -122,13 +117,4 @@
       </form>    
 </body>
 <?php @include("footer.php") ?>
-
-<?php
-    }
-    else // Sinon, on affiche un message d'erreur
-    {
-        echo '<p>Mot de passe incorrect</p>';
-        header('Location: http://localhost/PROJET-PAP/acces.php');
-    }
-    ?>
 </html>
